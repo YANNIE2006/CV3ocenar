@@ -1,0 +1,67 @@
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+background-size: 300% 300%;
+animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+}
+
+.container {
+width: 60%;
+margin: auto;
+padding: 20px;
+background: white;
+border-radius: 15px;
+text-align: center;
+margin-top: 40px;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+color: #ff4b2b;
+}
+
+input, textarea {
+width: 90%;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+border: 1px solid #ccc;
+}
+
+button {
+background: #ff4b2b;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+button:hover {
+background: #ff416c;
+}
+
+/* Floating Stickers */
+.stickers span {
+position: absolute;
+font-size: 30px;
+animation: float 5s infinite;
+}
+
+.stickers span:nth-child(1) { top: 10%; left: 10%; }
+.stickers span:nth-child(2) { top: 20%; right: 10%; }
+.stickers span:nth-child(3) { bottom: 20%; left: 15%; }
+.stickers span:nth-child(4) { bottom: 10%; right: 20%; }
+.stickers span:nth-child(5) { top: 50%; left: 50%; }
+
+@keyframes float {
+0% { transform: translateY(0); }
+50% { transform: translateY(-20px); }
+100% { transform: translateY(0); }
+}
